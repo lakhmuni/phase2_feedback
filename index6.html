@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Form</title>
+  <style>
+    body{ 
+        font-size:20px; 
+        background: #f0f2f5;
+        padding: 20px; 
+        }
+    .form-container {
+         background: white;
+          padding: 20px; 
+          max-width: 400px;
+           margin: auto; border-radius: 8px; }
+    h2 { 
+        text-align: center;
+     }
+    label { 
+        display: block; 
+        margin-top: 15px; 
+        font-weight: bold;
+     }
+    input, select, textarea, button { 
+        width: 100%; 
+        padding: 10px;
+         margin-top: 5px;
+          box-sizing: border-box; 
+        }
+    button { 
+        background: #4a90e2;
+         color: white; 
+         border: none; 
+         font-weight: bold; 
+         cursor: pointer;
+         }
+    button:hover { 
+        background: #357abd;
+     }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Feedback Form</h2>
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="John Doe" required>
+
+      <label>Email Address</label>
+      <input type="email" placeholder="john@example.com" required>
+
+      <label>Rating</label>
+      <select required>
+        <option value="" disabled selected>Select a rating</option>
+        <option>⭐⭐⭐⭐⭐ Excellent</option>
+        <option>⭐⭐⭐⭐ Very Good</option>
+        <option>⭐⭐⭐ Good</option>
+        <option>⭐⭐ Fair</option>
+        <option>⭐ Poor</option>
+      </select>
+
+      <label>Your Comments</label>
+      <textarea placeholder="What can we improve?..." required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+
+</body>
+</html>
